@@ -26,6 +26,15 @@
   user-select: none;
 }
 
+.placeholder-image {
+  background-color: #e0e0e0; /* cinza claro */
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* mantém proporção parecida com imagens reais */
+  object-fit: cover;
+  display: block;
+}
+
 body {
   align-content: center;
 }
@@ -264,6 +273,20 @@ a {
   flex-direction: row;
   justify-content: space-between;
   transition: 0.8s all ease-in-out;
+}
+
+.case-study.default {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.case-study.default .case-study-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background-image: url('/images/img-bookings-on-highspace.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .second {
